@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_staffhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/staff_profile"
+    tools:context=".StaffDetails">
+
+    <android.widget.ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:label="@string/staff_profile"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:label="@string/staff_profile">
+
+            <ImageView
+                android:id="@+id/iv_staffHomeUserImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="A picture of the staff member this profile belongs to"
+                android:src="@drawable/ic_baseline_single_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffHomeSelectUser"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Staff member"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_staffHomeUserImage"
+                app:layout_constraintTop_toTopOf="parent">
+                <AutoCompleteTextView
+                    android:id="@+id/actv_staffHomeSelectUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp"
+                    android:focusableInTouchMode="false"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/b_staffHomeNewPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="New Photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_staffHomeUserImage"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffHomeSelectUser" />
+            <Button
+                android:id="@+id/b_staffHomeUploadPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="Upload Photo"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_staffHomeUserImage"
+                app:layout_constraintTop_toBottomOf="@+id/b_staffHomeNewPhoto" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffHomeKnownAs"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Known As"
+                app:endIconContentDescription="@string/staff_update_known_as"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_staffHomeUserImage">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeKnownAs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_single_person"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Full Name"
+                app:endIconContentDescription="@string/staff_update_full_name"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffHomeKnownAs">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_single_person"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeTelNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Telephone Number"
+                app:endIconContentDescription="@string/staff_update_tel_number"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffhomeFullName">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeTelNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Email Address"
+                app:endIconContentDescription="@string/staff_update_email"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffhomeTelNo">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/drawable_email_24"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeEmpPos"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Employment Position"
+                app:endIconContentDescription="@string/staff_update_emp_position"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffhomeEmail">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeEmpPos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_toc_24"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeHours"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Contacted Hours"
+                app:endIconContentDescription="@string/staff_update_contracted_hours"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffhomeEmpPos">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/drawable_access_time"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_staffhomeReportsTo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Reports to"
+                app:endIconContentDescription="@string/staff_update_reports_to"
+                app:endIconDrawable="@drawable/drawable_edit"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_staffhomeHours">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_staffhomeReportsTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_two_people"
+                    android:drawablePadding="25dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/unknown_please_update" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.widget.ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/design_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_menu"
+        app:menu="@menu/menu_main_nav_drawer">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+

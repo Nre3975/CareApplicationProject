@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_dialogUpdateSUReqsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Please edit the details below and save to update \nthe changes."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_dialogUpdateSUReqsTextBox1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Full Name"
+            android:visibility="visible"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_staffUpdateRadioGroup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dialogUpdateSUReqsTextBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="25dp"
+                android:text="@string/unknown_please_update" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_updateFieldFreeText2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Last Name "
+            android:visibility="gone"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_dialogUpdateSUReqsTextBox1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_updateFieldTil2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="25dp"
+                android:text="@string/unknown_please_update" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_updateFieldSpinner1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Choose an option"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_updateFieldFreeText2">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:id="@+id/updateFieldSpinner1ACT">
+            </AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_dialogUpdateSUReqsButtonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cancel"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/b_dialogUpdateSUReqsButtonSave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_updateFieldSpinner1" />
+
+        <Button
+            android:id="@+id/b_dialogUpdateSUReqsButtonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="5dp"
+            android:text="Save Changes"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/b_dialogUpdateSUReqsButtonCancel"
+            app:layout_constraintTop_toBottomOf="@+id/til_updateFieldSpinner1" />
+
+        <RadioGroup
+            android:id="@+id/rg_staffUpdateRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dialogUpdateSUReqsHeader">
+            <RadioButton
+                android:id="@+id/rb_staffUpdateRadioUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Update Existing"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="42dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rb_staffUpdateRadioNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Create New"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="42dp" />
+            <RadioButton
+                android:id="@+id/rb_staffUpdateRadioExisting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="From List"
+                tools:layout_editor_absoluteX="257dp"
+                tools:layout_editor_absoluteY="43dp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

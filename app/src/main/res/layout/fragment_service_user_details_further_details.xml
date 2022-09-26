@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Service_User_Details_Further_Details">
+
+    <TextView
+        android:id="@+id/tv_sufdHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/su_fragment_header"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdHeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/til_sufdWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sufdHeaderText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdWeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/til_sufdBMI"
+        app:layout_constraintStart_toEndOf="@+id/til_sufdHeight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sufdHeaderText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdBMI"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/til_sufdWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sufdHeaderText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="add"
+            android:hint="BMI" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdBPSystolic"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/til_sufdBPdiastolic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_sufdUpdateHWButton">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdBPSystolic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BP Sys" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdBPdiastolic"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/til_sufdBPResult"
+        app:layout_constraintStart_toEndOf="@+id/til_sufdBPSystolic"
+        app:layout_constraintTop_toBottomOf="@+id/b_sufdUpdateHWButton">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdBPdiastolic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BP Dia" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdBPResult"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/til_sufdBPdiastolic"
+        app:layout_constraintTop_toBottomOf="@+id/b_sufdUpdateHWButton">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdBPResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BMI" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdDietaryRequirements"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:endIconContentDescription="dietary_requirements"
+        app:endIconDrawable="@drawable/drawable_edit"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_sufdUpdateBPButton">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdDietaryRequirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Dietary Requirements"
+            android:lines="6"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:scrollbars="none"
+            android:inputType="textMultiLine"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdMovingAndHandlinReqs"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:endIconContentDescription="moving_and_handling"
+        app:endIconDrawable="@drawable/drawable_edit"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_sufdDietaryRequirements">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdMovingAndHandlinReqs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Moving And Handling Requirements"
+            android:lines="6"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdBehaviouralNotes"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:endIconContentDescription="behaviour_history"
+        app:endIconDrawable="@drawable/drawable_edit"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_sufdMovingAndHandlinReqs">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdBehaviouralNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Key Behavioural Notes"
+            android:lines="6"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:scrollbars="none"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_sufdPersonalPreferences"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:endIconContentDescription="personal_preferences"
+        app:endIconDrawable="@drawable/drawable_edit"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_sufdBehaviouralNotes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sufdPersonalPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Personal Preferences"
+            android:lines="6"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:scrollbars="none"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_sufdUpdateHWButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:text="Update Height And Weight"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
+        app:iconGravity="end"
+        app:icon="@drawable/ic_edit_in_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_sufdWeight" />
+
+    <Button
+        android:id="@+id/b_sufdUpdateBPButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:text="Update BP Readings"
+        android:textAlignment="textEnd"
+        app:iconGravity="end"
+        android:textSize="10dp"
+        app:icon="@drawable/ic_edit_in_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_sufdBPdiastolic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

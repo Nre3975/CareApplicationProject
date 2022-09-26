@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_service_user_details"
+    app:startDestination="@id/serviceUserDetailsHome">
+
+    <fragment
+        android:id="@+id/serviceUserDetailsHome"
+        android:name="com.example.tm470_careapp.service_user_details_home"
+        android:label="Service User Details"
+        tools:layout="@layout/fragment_service_user_details_home" />
+    <fragment
+        android:id="@+id/service_user_details_further_details"
+        android:name="com.example.tm470_careapp.Service_User_Details_Further_Details"
+        android:label="Service User Further Details"
+        tools:layout="@layout/fragment_service_user_details_further_details" />
+    <fragment
+        android:id="@+id/service_user_details_contacts"
+        android:name="com.example.tm470_careapp.Service_User_Details_Contacts"
+        android:label="Service User Medical History"
+        tools:layout="@layout/fragment_service_user_details_contacts" />
+    <fragment
+        android:id="@+id/service_user_details_medical_details"
+        android:name="com.example.tm470_careapp.service_user_details_medical_details"
+        android:label="Service User Contacts"
+        tools:layout="@layout/fragment_service_user_details_medical_details" />
+</navigation>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/drawable_area_chart.xml" value="0.6275" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/drawable_border.xml" value="0.494" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_arrow_down.xml" value="0.4335" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.4335" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_bed_double.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_bed_single.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_bed_twin.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_bedroom_parent_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_further_details.xml" value="0.6275" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_home.xml" value="0.6275" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_import_contacts_24.xml" value="0.4335" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_medication_24.xml" value="0.4335" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_baseline_toc_24.xml" value="0.3945" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.3705" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_add_new_service_user.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_dashboard.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_ddtest.xml" value="0.3194078947368421" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_drawer_base.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_edit_service_user.xml" value="0.23782894736842106" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_edit_staff.xml" value="0.33" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_home_rooms.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_main2.xml" value="0.3194078947368421" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_medical.xml" value="0.2891447368421053" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_medical_database.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_medical_maint.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_rooms_home.xml" value="0.2" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_service_user_details.xml" value="0.25" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_service_users_rooms.xml" value="0.18092105263157895" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_staff_home.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_staff_homepage.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_tutorial_drawer_base.xml" value="0.2891447368421053" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_update_one.xml" value="0.2914473684210526" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/activity_user_maintenance.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/content_layout.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/content_navigation_draw.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_box_add_it_to_user.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_box_new_vitals.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_box_staff_update.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_box_update_service_user_reqs.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_image.xml" value="0.29407894736842105" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_single_spinner_box.xml" value="0.3194078947368421" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/dialog_single_text_box.xml" value="0.3194078947368421" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/fragment_gallery.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/fragment_service_user_details_contacts.xml" value="0.1875" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/fragment_service_user_details_further_details.xml" value="0.33" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/fragment_service_user_details_home.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/fragment_service_user_details_medical_details.xml" value="0.25" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/nav_header_menu.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/recycler_room_card.xml" value="0.25" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/recycler_su_allergy_card.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/recycler_su_contact_card.xml" value="0.33" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/recycler_su_medcond_card.xml" value="0.5" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/recycler_su_medical_card.xml" value="0.3148026315789474" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/room_card.xml" value="0.18651315789473685" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/room_new_data_dialog_box.xml" value="0.67" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/room_update_dialog_box.xml" value="0.1" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/spinner_item.xml" value="0.2914473684210526" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/staff_update_dialog_box.xml" value="0.5" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/tutorial_content_layout.xml" value="0.2891447368421053" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/layout/update_staff_details.xml" value="0.3171052631578947" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/menu/menu_main_nav_drawer.xml" value="0.3194078947368421" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/menu/menu_service_user_details_bottom.xml" value="0.2236842105263158" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/menu/nav_main_menu.xml" value="0.4026315789473684" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/menu/nav_service_user_details.xml" value="0.28848684210526315" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.5015" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher2.png.xml" value="0.3525" />
+        <entry key="..\:/Users/Nicke/AndroidStudioProjects/TM470_CareApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.501" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

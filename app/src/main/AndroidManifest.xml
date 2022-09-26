@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tm470_careapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TM470_CareApp">
+        <activity
+            android:name=".UserMaintenance"
+            android:exported="false" />
+        <activity
+            android:name=".AddUpdateServiceUser"
+            android:exported="false" />
+        <activity
+            android:name=".MedicalDatabase"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OccupiedRoomsHome"
+            android:exported="false" />
+        <service
+            android:name=".AppClosed"
+            android:stopWithTask="false" />
+        <activity
+            android:name=".StaffDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

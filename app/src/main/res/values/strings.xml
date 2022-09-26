@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">TM470_CareApp</string>
+    <string name="text">Text</string>
+    <string name="name">Name</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="unknown_please_update">Unknown, Please update.</string>
+    <string name="title_activity_navigation_draw">NavigationDraw</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="staff_profile">Staff Profile</string>
+    <string name="known_as_room_x_medical_history">KNOWNAS (Room X)</string>
+    <string name="update_and_save">Please edit the details below and save to update \nthe changes.</string>
+    <string name="Please_Select_Category_Condition">Please select a category, then enter the new medical condition or allergy below</string>
+    <string name="not_selected">Not Selected.</string>
+    <string name="su_fragment_header">Known As (RoomX)</string>
+    <string name="UpdateUser">Update User</string>
+    <string name="NODNACPR">None</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="username">Username</string>
+    <string name="NewStaffMemberHeader">Please enter basic details about the new user below to create their database account.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="digital_signature">Digital Signature</string>
+    <string name="start_date">Start Date</string>
+    <string name="add_new_user">Add New User</string>
+    <string name="login_page_company_logo">Login Page Company Logo</string>
+    <string name="add_a_new_record_to_a_service_user">Add a new record to a service User</string>
+    <string name="chosen_allergy_condition">Chosen Allergy / Condition:</string>
+    <string name="please_choose_a_category_and_selection_before_trying_to_add_to_a_user">Please Choose a category and selection before trying to add to a user</string>
+    <string name="add_to_user">Add To User</string>
+    <string name="staff_member_image">Staff Member Image</string>
+    <string name="picture_of_the_service_user">Picture of the service user</string>
+    <string name="please_choose_a_user">Please choose a user to add the details to, complete at least the start date, then click save to confirm the transaction.</string>
+    <string name="staff_update_emp_position">emp_position</string>
+    <string name="staff_update_email">email_address</string>
+    <string name="staff_update_tel_number">telephone_number</string>
+    <string name="staff_update_full_name">full_name</string>
+    <string name="staff_update_known_as">known_as</string>
+    <string name="staff_update_contracted_hours">contracted_hours</string>
+    <string name="staff_update_reports_to">reports_to</string>
+
+
+    <string-array name="SexChoices">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="DNACPRChoices">
+        <item>No DNACPR</item>
+        <item>DNACPR</item>
+    </string-array>
+
+
+</resources>

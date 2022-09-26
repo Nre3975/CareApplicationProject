@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutMedicalDatabase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalDatabase">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/MedicalDatabaseSpinnerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_medicalDatabaseTextSearchHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Please select a medical condition or allergy from \nthe database using the menus below"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/rg_medicalDatabaseRG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicalDatabaseTextSearchHeader">
+                <RadioButton
+                    android:id="@+id/rb_medicalDatabaseMedicalRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:checked="true"
+                    android:text="Medical Conditions"
+                    tools:layout_editor_absoluteX="128dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <RadioButton
+                    android:id="@+id/rb_medicalDatabaseAllergyRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Allergies"
+                    tools:layout_editor_absoluteX="259dp"
+                    tools:layout_editor_absoluteY="31dp" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_medicalDatabaseSpinnerOne"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Medical Category"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_medicalDatabaseRG">
+                <AutoCompleteTextView
+                    android:id="@+id/actv_medicalDatabaseSpinnerOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false">
+                </AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_MedicalDatabaseSpinnerTwo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Medical Condition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_medicalDatabaseSpinnerOne">
+                <AutoCompleteTextView
+                    android:id="@+id/actv_MedicalDatabaseSpinnerTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true">
+                </AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/s_medicalDatabaseNewItemSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="Add New Record"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_MedicalDatabaseSpinnerTwo" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/s_medicalDatabaseAddUserSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:text="Add To User"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/s_medicalDatabaseNewItemSwitch"
+                app:layout_constraintTop_toBottomOf="@+id/til_MedicalDatabaseSpinnerTwo"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_medicalDatabaseNewRecordContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_MedicalDatabaseResultDataContainer">
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/div_medicalDatabaseResultDividerThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+            </com.google.android.material.divider.MaterialDivider>
+
+            <TextView
+                android:id="@+id/tv_medicalDatabaseTextNewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="@string/Please_Select_Category_Condition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_medicalDatabaseTextSubHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="Category Being Added To: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicalDatabaseTextNewHeader" />
+
+            <TextView
+                android:id="@+id/tv_medicalDatabaseTextNewBody"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:textColor="@color/customRed"
+                android:text="@string/not_selected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_medicalDatabaseTextSubHeader"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicalDatabaseTextNewHeader" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_MedicalDatabaseNewValue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="New Condition"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicalDatabaseTextNewBody">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_medicalDatabaseNewValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_MedicalDatabaseNewValueSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="Save New Record"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_MedicalDatabaseNewValue">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/div_medicalDatabaseResultDividerFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </com.google.android.material.divider.MaterialDivider>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_MedicalDatabaseResultDataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/MedicalDatabaseSpinnerContainer">
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/div_MedicalDatabaseResultDividerOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+            </com.google.android.material.divider.MaterialDivider>
+
+            <TextView
+                android:id="@+id/tv_MedicalDatabaseCurrentHeaderOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/add_a_new_record_to_a_service_user"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/div_MedicalDatabaseResultDividerOne" />
+
+            <TextView
+                android:id="@+id/tv_MedicalDatabaseCurrentHeaderTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/chosen_allergy_condition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_MedicalDatabaseCurrentHeaderOne" />
+
+            <TextView
+                android:id="@+id/tv_MedicalDatabaseCurrentBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/please_choose_a_category_and_selection_before_trying_to_add_to_a_user"
+                android:textColor="@color/customRed"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_MedicalDatabaseCurrentHeaderTwo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_medicalDatabaseAddToUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="@string/add_to_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_MedicalDatabaseCurrentBody">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/div_medicalDatabaseResultDividertwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </com.google.android.material.divider.MaterialDivider>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/medicalDatabaseNavView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_menu"
+        app:menu="@menu/menu_main_nav_drawer">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

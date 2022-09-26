@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Home Rooms">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/nav_staff_home"
+                        android:icon="@drawable/ic_baseline_two_people"
+                        android:title="Staff Home" />
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Home Rooms">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/nav_occupied_rooms"
+                        android:icon="@drawable/drawable_bed_double"
+                        android:title="Occupied Rooms" />
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Maintenance">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/nav_maint_medical"
+                        android:icon="@drawable/ic_baseline_medication_24"
+                        android:title="Medical Database" />
+                    <item
+                        android:id="@+id/nav_maint_newServiceUser"
+                        android:icon="@drawable/drawable_new"
+                        android:title="Add New Service User" />
+                    <item
+                        android:id="@+id/nav_maint_newStaffMember"
+                        android:icon="@drawable/drawable_new"
+                        android:title="Add New Staff" />
+                    <item
+                        android:id="@+id/nav_maint_contacts"
+                        android:icon="@drawable/drawable_import_contacts"
+                        android:title="Contacts" />
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item>
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/nav_Logout"
+                        android:icon="@drawable/ic_baseline_logout_24"
+                        android:title="Logout" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

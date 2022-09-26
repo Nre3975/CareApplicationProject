@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/serviceUserDetailsHome"
+        android:icon="@drawable/drawable_home"
+        android:title="Details">
+    </item>
+    <item android:id="@+id/service_user_details_further_details"
+        android:icon="@drawable/drawable_further_details"
+        android:title="Further Details">
+    </item>
+    <item android:id="@+id/service_user_details_medical_details"
+        android:icon="@drawable/ic_medical_details"
+        android:title="Medical Details">
+    </item>
+    <item android:id="@+id/service_user_details_contacts"
+        android:icon="@drawable/drawable_import_contacts"
+        android:title="Contacts">
+    </item>
+</menu>
